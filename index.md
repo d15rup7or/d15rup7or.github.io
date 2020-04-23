@@ -4,10 +4,10 @@
 * <a href="#privilege-escalation">[Privilege escalation](#privilege-escalation)</a>
   * [Linux](#linux)
   * [Windows](#windows)
-* ![Miscellaneous](#Miscellaneous)
-  * ![Windows](#Windows)
-* ![Simple Buffer Overflow](#Simple-Buffer-Overflow)
-* [Buffer Overflow](#buffer-overflow)
+* <a href="#miscellaneous">[Miscellaneous](#Miscellaneous)</a>
+  * [Windows](#Windows)
+* <a href="#simple-buffer-overflow">[Simple Buffer Overflow](#simple-buffer-overflow)</a>
+* <a href="#buffer-overflow">[Buffer Overflow](#buffer-overflow)</a>
 
 Useful sources with links
 
