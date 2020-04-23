@@ -4,19 +4,13 @@
 * <a href="#privilege-escalation">[Privilege escalation](#privilege-escalation)</a>
   * [Linux](#linux)
   * [Windows](#windows)
-* [Miscellaneous](#miscellaneous)
+* <a href="#miscellaneous">[Miscellaneous](#miscellaneous)</a>
   * [Windows](#Windows)
+* <a href="#useful-stuff-win-or-linux">[Useful stuff (Win or Linux)](#useful-stuff-win-or-linux)</a>  
 * <a href="#simple-buffer-overflow">[Simple Buffer Overflow](#simple-buffer-overflow)</a>
 * <a href="#buffer-overflow">[Buffer Overflow](#buffer-overflow)</a>
 
 Useful sources with links
-
-### Windows check architecture
-```
-wmic os get osarchitecture
-echo %PROCESSOR_ARCHITECTURE%
-```
-
 
 ## Privilege Escalation[⤴](#table-of-contents)
 ### Linux
@@ -39,6 +33,13 @@ echo %PROCESSOR_ARCHITECTURE%
 ### Windows
 * 
 ### Linux 
+
+## Useful stuff (Win or Linux)
+### Windows check architecture
+```
+wmic os get osarchitecture
+echo %PROCESSOR_ARCHITECTURE%
+```
 
 ## Simple Buffer Overflow (32 bits, NO ASLR and NO DEP)[⤴](#table-of-contents)
 Steps:
