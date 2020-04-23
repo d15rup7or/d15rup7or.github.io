@@ -68,6 +68,26 @@ done
 
 ## Web directories/files scanner[⤴](#table-of-contents)
 
+### Dirsearch
+```
+python3 dirsearch.py -u <URL> -e <EXTENSION>
+```
+
+### Nikto
+```
+nikto -Format txt -o webscan/nikto-initial -host http://192.168.56.101 -p 8080
+```
+
+### Gobuster
+```
+gobuster dir -u http://192.168.56.101 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x php,txt,py -o webscan/gobuster-extensions
+```
+
+### ffuf
+```
+ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -u http://192.168.56.101/FUZZ
+```
+
 ## Privilege Escalation[⤴](#table-of-contents)
 ### Linux
 * https://gtfobins.github.io/#+non-interactive%20bind%20shell
