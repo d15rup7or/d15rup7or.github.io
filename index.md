@@ -1,7 +1,7 @@
 # OSCP Cheatsheet
 
 ## Table of contents
-* ![Privilege escalation](#webapps)
+* ![Privilege escalation](#Privilege-escalation)
   * ![Linux](#Linux)
   * ![Windows](#Windows)
 * ![Miscellaneous](#Miscellaneous)
@@ -19,7 +19,7 @@ echo %PROCESSOR_ARCHITECTURE%
 
 
 ## Privilege Escalation[⤴](#table-of-contents)
-### Linux
+### Linux(#Linux)
 * https://gtfobins.github.io/#+non-interactive%20bind%20shell
 * https://book.hacktricks.xyz/linux-unix/privilege-escalation
 * https://guif.re/linuxeop
