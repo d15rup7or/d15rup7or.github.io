@@ -1,6 +1,7 @@
 # OSCP Cheatsheet
 
 ## Table of contents
+* <a href="#useful-tools-on-kali)">[Useful tools (on Kali)](#useful-tools-on-kali)</a>
 * <a href="#privilege-escalation">[Privilege escalation](#privilege-escalation)</a>
   * [Linux](#linux)
   * [Windows](#windows)
@@ -11,6 +12,29 @@
 * <a href="#buffer-overflow">[Buffer Overflow](#buffer-overflow)</a>
 
 Useful sources with links
+
+## Useful tools (on Kali)[⤴](#table-of-contents)
+
+#### create_pattern
+```
+/usr/share/metasploit-framework/tools/exploit/pattern_create.rb
+/usr/bin/msf-pattern_create
+```
+#### pattern_offset
+```
+/usr/share/metasploit-framework/tools/exploit/pattern_offset.rb
+/usr/bin/msf-pattern_offset
+```
+#### nasm_shell
+```
+/usr/share/metasploit-framework/tools/exploit/nasm_shell.rb
+/usr/bin/msf-nasm_shell
+```
+#### msfvenom
+```
+/usr/share/metasploit-framework/msfvenom
+/usr/bin/msfvenom
+```
 
 ## Privilege Escalation[⤴](#table-of-contents)
 ### Linux
@@ -36,7 +60,7 @@ Useful sources with links
 * 
 ### Linux 
 
-## Useful stuff (Win or Linux)
+## Useful stuff (Win or Linux)[⤴](#table-of-contents)
 ### Windows check architecture
 ```
 wmic os get osarchitecture
