@@ -255,5 +255,7 @@ most common ones
 ## Additional OSCP Cheatsheets[⤴](#table-of-contents)
 * https://github.com/Optixal/OSCP-PWK-Notes-
 * https://sushant747.gitbooks.io/total-oscp-guide/transfering_files.html
+* https://chryzsh.gitbooks.io/pentestbook/oscp.html
+* https://github.com/Optixal/OSCP-PWK-Notes-Public
 
 
