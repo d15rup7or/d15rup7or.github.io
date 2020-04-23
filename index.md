@@ -6,7 +6,8 @@
   * [Linux](#linux)
   * [Windows](#windows)
 * <a href="#miscellaneous">[Miscellaneous](#miscellaneous)</a>
-  * [Windows](#Windows)
+  * [Windows](#windows)
+  * [Linux](#linux)
 * <a href="#useful-stuff-win-or-linux">[Useful stuff (Win or Linux)](#useful-stuff-win-or-linux)</a>  
 * <a href="#simple-buffer-overflow">[Simple Buffer Overflow](#simple-buffer-overflow)</a>
 * <a href="#buffer-overflow">[Buffer Overflow](#buffer-overflow)</a>
@@ -113,6 +114,13 @@ Steps:
     6 - Find return address (JMP ESP)
     7 - Create payload
 
+### Badchars
+
+most common ones
+```
+\x00 --> null byte
+\x0a --> new line character (also known as "\n")
+```
 
 ## Buffer Overflow[⤴](#table-of-contents)
 * https://github.com/justinsteven/dostackbufferoverflowgood
