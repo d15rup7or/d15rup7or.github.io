@@ -1,13 +1,13 @@
 # OSCP Cheatsheet
 
 ## Table of contents
-* ![Privilege escalation](#Privilege-escalation)
-  * ![Linux](#Linux)
-  * ![Windows](#Windows)
+* [Privilege escalation](#privilege-escalation)
+  * [Linux](#linux)
+  * [Windows](#windows)
 * ![Miscellaneous](#Miscellaneous)
   * ![Windows](#Windows)
 * ![Simple Buffer Overflow](#Simple-Buffer-Overflow)
-* ![Buffer Overflow](#Buffer-Overflow)
+* [Buffer Overflow](#buffer-overflow)
 
 Useful sources with links
 
@@ -19,7 +19,7 @@ echo %PROCESSOR_ARCHITECTURE%
 
 
 ## Privilege Escalation[⤴](#table-of-contents)
-### Linux(#Linux)
+### Linux
 * https://gtfobins.github.io/#+non-interactive%20bind%20shell
 * https://book.hacktricks.xyz/linux-unix/privilege-escalation
 * https://guif.re/linuxeop
