@@ -2,6 +2,8 @@
 
 ## Table of contents
 * <a href="#useful-tools-on-kali)">[Useful tools (on Kali)](#useful-tools-on-kali)</a>
+* <a href="#ports-discovery-without-nmap">[Ports discovery without nmap](#ports-discovery-without-nmap)</a>
+* <a href="#web-directories-files-scanner">[Web directories/files scanner](#web-directories-files-scanner)</a>
 * <a href="#privilege-escalation">[Privilege escalation](#privilege-escalation)</a>
   * [Linux](#linux)
   * [Windows](#windows)
@@ -36,6 +38,35 @@ Useful sources with links
 /usr/share/metasploit-framework/msfvenom
 /usr/bin/msfvenom
 ```
+## Ports discovery without nmap[⤴](#table-of-contents)
+
+#### nc + bash
+
+Basic discovery of top ports open in 192.168.56
+
+```
+top10=(20 21 22 23 25 80 110 139 443 445 3389); for i in "${top10[@]}"; do nc -w 1 192.168.56.253 $i && echo "Port $i is open" || echo "Port $i is closed or filtered"; done
+```
+#### /dev/tcp/ip/port or /dev/udp/ip/port
+
+It is possible to do the same by using the special dev files /dev/tcp/ip/port or /dev/udp/ip/port (for example if nc is not found):
+
+```
+top10=(20 21 22 23 25 80 110 139 443 445 3389); for i in "${top10[@]}"; do (echo > /dev/tcp/192.168.30.253/"$i") > /dev/null 2>&1 && echo "Port $i is open" || echo "Port $i is closed"; done
+```
+We can also write a simple script that will perform a scan on a C-class subnet
+```
+#!/bin/bash
+subnet="192.168.56"
+top10=(20 21 22 23 25 80 110 139 443 445 3389)
+for host in range {1..255}; do
+    for port in "${top10[@]}"; do
+        (echo > /dev/tcp/"${subnet}.${host}/${port}") > /dev/null 2>& && echo "Host ${subnet}.${host} has ${port} open" || "Host ${subnet}.${host} has ${port} closed"
+    done
+done
+```
+
+## Web directories/files scanner[⤴](#table-of-contents)
 
 ## Privilege Escalation[⤴](#table-of-contents)
 ### Linux
