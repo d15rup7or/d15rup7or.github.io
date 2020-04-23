@@ -1,7 +1,7 @@
 # OSCP Cheatsheet
 
 ## Table of contents
-* [Privilege escalation](#privilege-escalation)
+* <a href="#privilege-escalation">[Privilege escalation](#privilege-escalation)</a>
   * [Linux](#linux)
   * [Windows](#windows)
 * ![Miscellaneous](#Miscellaneous)
