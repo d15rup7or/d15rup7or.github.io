@@ -19,9 +19,10 @@ Useful sources with links
 * https://guif.re/linuxeop
 * https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
 * https://www.win.tue.nl/~aeb/linux/hh/hh-8.html
-* http://www.dankalia.com/tutor/01005/0100501004.htm
+* http://www.dankalia.com/tutor/01005/0100501004.htm \
 
 ### Windows
+
 * https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/
 * https://github.com/worawit/MS17-010 <-- EternalBlue without msf
 * http://www.fuzzysecurity.com/tutorials/16.html
