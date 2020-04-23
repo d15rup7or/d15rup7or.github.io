@@ -4,7 +4,7 @@
 * <a href="#privilege-escalation">[Privilege escalation](#privilege-escalation)</a>
   * [Linux](#linux)
   * [Windows](#windows)
-* <a href="#miscellaneous">[Miscellaneous](#Miscellaneous)</a>
+* [Miscellaneous](#miscellaneous)
   * [Windows](#Windows)
 * <a href="#simple-buffer-overflow">[Simple Buffer Overflow](#simple-buffer-overflow)</a>
 * <a href="#buffer-overflow">[Buffer Overflow](#buffer-overflow)</a>
