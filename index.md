@@ -57,9 +57,17 @@ Useful sources with links
 
 ## Miscellaneous[⤴](#table-of-contents)
 ### Windows
-* 
+* http://www.cheat-sheets.org/saved-copy/Windows_folders_quickref.pdf
+* https://www.lemoda.net/windows/windows2unix/windows2unix.html
+* https://bernardodamele.blogspot.com/2011/12/dump-windows-password-hashes.html
+* https://gracefulsecurity.com/path-traversal-cheat-sheet-windows/
+* https://bernardodamele.blogspot.com/2011/12/dump-windows-password-hashes.html
+* https://malicious.link/post/2016/kerberoast-pt1/
 ### Linux 
-
+* http://www.pathname.com/fhs/pub/fhs-2.3.html
+* https://github.com/rapid7/ssh-badkeys
+* http://www.linusakesson.net/programming/tty/
+* http://pentestmonkey.net/blog/post-exploitation-without-a-tty
 ## Useful stuff (Win or Linux)[⤴](#table-of-contents)
 ### Windows check architecture
 ```
