@@ -1,6 +1,6 @@
 # [SLAE]()
 ---
-# [Walkthroughs](/Labs)
+# [Walkthroughs](/Labs/Brainpan: 1)
 ---
 # OSCP Cheatsheet
 
