@@ -1,6 +1,6 @@
-# SLAE
+# [SLAE]()
 ---
-# Walkthroughs
+# [Walkthroughs](/Walkthroughs/index.md)
 ---
 # OSCP Cheatsheet
 
