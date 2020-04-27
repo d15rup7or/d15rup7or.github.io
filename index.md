@@ -1,8 +1,8 @@
 # -> Homepage
 
-## [Walkthroughs](/Labs)
+## [Walkthroughs](d15rup7or/Labs)
 ---
-## [OSCPpreparation](/cheatsheet)
+## [OSCPpreparation](d15rup7or/cheatsheet)
 
 ## Table of contents
 * <a href="#useful-tools-on-kali)">[Useful tools (on Kali)](#useful-tools-on-kali)</a>
