@@ -1,6 +1,6 @@
 # [Walkthroughs](/Labs/Brainpan: 1)
 ---
-# [OSCP cheatsheet](/OSCPpreparation/SMB)
+# [OSCP cheatsheet](/OSCPpreparation)
 ---
 ## Table of contents
 * <a href="#useful-tools-on-kali)">[Useful tools (on Kali)](#useful-tools-on-kali)</a>
