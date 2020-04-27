@@ -1,4 +1,5 @@
-# [Walkthroughs](#/Labs/Brainpan: 1)
+---
+# [Walkthroughs](#/Labs)
 ---
 # [OSCPcheatsheet](#/OSCPpreparation)
 ---
