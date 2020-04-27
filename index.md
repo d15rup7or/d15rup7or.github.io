@@ -1,6 +1,8 @@
-# [Walkthroughs](/Labs)
+# -> Homepage
+
+## [Walkthroughs](/Labs)
 ---
-# [OSCPpreparation](/OSCPpreparation)
+## [OSCPpreparation](/cheatsheet)
 
 ## Table of contents
 * <a href="#useful-tools-on-kali)">[Useful tools (on Kali)](#useful-tools-on-kali)</a>
